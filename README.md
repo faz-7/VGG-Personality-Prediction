@@ -11,6 +11,10 @@ The dataset used in this project is a subset of the **ChaLearn First Impression 
 - **Agreeableness**
 - **Neuroticism**
 
+### Dataset Access
+You can access the dataset and its details from the official ChaLearn website:  
+[ChaLearn First Impression Dataset](https://chalearnlap.cvc.uab.cat/dataset/24/description/)
+
 ### Data Preprocessing
 - **Audio Extraction:** Extracts raw audio files from the video dataset.
 - **Feature Extraction:** Uses **VGGish** to convert raw audio into feature embeddings.
@@ -69,4 +73,3 @@ model = Vgg(numChannels=1, classes=5)
 model.load_state_dict(torch.load("best_model.pth"))
 model.eval()
 ```
-
